@@ -18,7 +18,7 @@ const flowCuestionario = addKeyword('si')
 
         // 🔹 Enviar los datos al backend
         try {
-            const response = await fetch('http://localhost:8082/usuarios/guardar', {
+            const response = await fetch('https://bot-service-production.up.railway.app/usuarios/guardar', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
